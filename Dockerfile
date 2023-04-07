@@ -1,7 +1,7 @@
 #FROM node:18.7.0-buster-slim as base
 FROM node:lts-alpine3.17 as base
 ENV HOME /usr/src/app
-USER node
+USER root
 WORKDIR $HOME
 
 COPY ["src/package.json", "src/package-lock.json", "$HOME/"]
